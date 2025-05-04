@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual da Mente Milionária - Transforme Sua Mentalidade</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+        }
+        .ebook-shadow {
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+        }
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.4);
+            }
+            70% {
+                transform: scale(1.02);
+                box-shadow: 0 0 0 10px rgba(99, 102, 241, 0);
+            }
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(99, 102, 241, 0);
+            }
+        }
+        .highlight {
+            position: relative;
+            display: inline-block;
+            z-index: 1;
+        }
+        .highlight:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 40%;
+            background-color: rgba(245, 158, 11, 0.3);
+            z-index: -1;
+            transform: skewY(-1deg);
+            border-radius: 2px;
+        }
+        .feature-icon {
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+        }
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        .floating {
+            animation: floating 6s ease-in-out infinite;
+        }
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Main Landing Page -->
+    <div id="main-page">
+        <!-- Navigation -->
+        <nav class="bg-white shadow-sm py-4">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center">
+                        <div class="h-10 w-10 rounded-full bg-indigo-600 flex items-center justify-center text-white font-bold text-xl">
+                            M
+                        </div>
+                        <span class="ml-3 text-xl font-bold text-gray-900">Mente Milionária</span>
+                    </div>
+                    <div class="hidden md:block">
+                        <a href="#features" class="px-3 py-2 font-medium hover:text-indigo-600">Benefícios</a>
+                        <a href="#testimonials" class="px-3 py-2 font-medium hover:text-indigo-600">Depoimentos</a>
+                        <a href="#faq" class="px-3 py-2 font-medium hover:text-indigo-600">Dúvidas</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <header class="hero-gradient text-white py-16 md:py-24 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-col lg:flex-row items-center justify-between gap-12">
+                    <div class="lg:w-1/2">
+                        <div class="mb-4">
+                            <span class="bg-white text-indigo-600 px-3 py-1 rounded-full text-sm font-semibold">E-BOOK GRATUITO</span>
+                        </div>
+                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+                            <span class="highlight">Desbloqueie o Poder</span> da Sua Mente Financeira
+                        </h1>
+                        <p class="text-xl md:text-2xl text-indigo-100 mb-8">
+                            Baixe agora o <span class="font-bold">Manual da Mente Milionária</span> e descubra os 10 hábitos que separam os ricos da maioria.
+                        </p>
+                        
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a href="#thank-you-page" onclick="showThankYouPage()" class="pulse inline-flex items-center justify-center px-8 py-4 border border-transparent text-lg font-bold rounded-lg shadow-lg text-white bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 transition-all duration-300">
+                                <i class="fas fa-download mr-3"></i> Baixar E-book Gratuito
+                            </a>
+                            <a href="#features" class="inline-flex items-center justify-center px-8 py-4 border border-white text-lg font-bold rounded-lg shadow-sm text-white hover:bg-white hover:bg-opacity-10 transition-all duration-300">
+                                <i class="fas fa-info-circle mr-3"></i> Saiba Mais
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="lg:w-1/2 flex justify-center">
+                        <div class="relative">
+                            <div class="absolute -inset-4 bg-indigo-500 rounded-2xl opacity-20 blur-lg"></div>
+                            <div class="ebook-shadow rounded-2xl overflow-hidden relative floating">
+                                <img src="manual.webp" alt="Manual da Mente Milionária" class="w-full h-auto max-w-md rounded-2xl border-4 border-white">
+                            </div>
+                            <div class="absolute -bottom-6 -right-6 bg-white p-3 rounded-lg shadow-lg">
+                                <div class="flex items-center">
+                                    <div class="h-10 w-10 rounded-full bg-yellow-500 flex items-center justify-center text-white">
+                                        <i class="fas fa-lock-open"></i>
+                                    </div>
+                                    <div class="ml-2">
+                                        <p class="text-xs font-semibold text-gray-500">DOWNLOAD</p>
+                                        <p class="text-sm font-bold text-gray-900">100% Gratuito</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Features Section -->
+        <section id="features" class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">O Que Você Vai Aprender</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">Conhecimentos comprovados que vão transformar sua relação com o dinheiro</p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-gray-50 p-8 rounded-xl hover:shadow-lg transition-all duration-300">
+                        <div class="h-16 w-16 feature-icon rounded-lg flex items-center justify-center text-white mb-6">
+                            <i class="fas fa-brain text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Mentalidade Milionária</h3>
+                        <p class="text-gray-600">Aprenda os hábitos que moldam a mentalidade das pessoas mais ricas e bem-sucedidas do mundo.</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-8 rounded-xl hover:shadow-lg transition-all duration-300">
+                        <div class="h-16 w-16 feature-icon rounded-lg flex items-center justify-center text-white mb-6">
+                            <i class="fas fa-chart-line text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Bloqueios Ocultos</h3>
+                        <p class="text-gray-600">Descubra o que está te travando sem perceber e como eliminar essas barreiras mentais.</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-8 rounded-xl hover:shadow-lg transition-all duration-300">
+                        <div class="h-16 w-16 feature-icon rounded-lg flex items-center justify-center text-white mb-6">
+                            <i class="fas fa-bullseye text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Foco e Disciplina</h3>
+                        <p class="text-gray-600">Desenvolva a capacidade de maintain o foco e a disciplina necessários para alcançar grandes objetivos.</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-8 rounded-xl hover:shadow-lg transition-all duration-300">
+                        <div class="h-16 w-16 feature-icon rounded-lg flex items-center justify-center text-white mb-6">
+                            <i class="fas fa-magnet text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Magnetismo Financeiro</h3>
+                        <p class="text-gray-600">Aumente sua capacidade de atrair oportunidades e pessoas que impulsionam seu crescimento.</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-8 rounded-xl hover:shadow-lg transition-all duration-300">
+                        <div class="h-16 w-16 feature-icon rounded-lg flex items-center justify-center text-white mb-6">
+                            <i class="fas fa-lightbulb text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Conteúdo Prático</h3>
+                        <p class="text-gray-600">Ações concretas que você pode implementar imediatamente para começar a ver resultados.</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-8 rounded-xl hover:shadow-lg transition-all duration-300">
+                        <div class="h-16 w-16 feature-icon rounded-lg flex items-center justify-center text-white mb-6">
+                            <i class="fas fa-gem text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Valor Inestimável</h3>
+                        <p class="text-gray-600">Conhecimento que pode valer milhares de reais, agora disponível gratuitamente para você.</p>
+                    </div>
+                </div>
+                
+                <div class="mt-16 text-center">
+                    <a href="#thank-you-page" onclick="showThankYouPage()" class="inline-flex items-center px-8 py-4 border border-transparent text-lg font-bold rounded-lg shadow-md text-white bg-gradient-to-r from-indigo-600 to-indigo-700 hover:from-indigo-700 hover:to-indigo-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-all duration-300">
+                        <i class="fas fa-download mr-3"></i> Quero Meu E-book Agora
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-16 px-4 sm:px-6 lg:px-8 gradient-bg">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Quem Já Transformou Sua Mentalidade</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">Veja o que dizem pessoas que aplicaram esses princípios</p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-xl testimonial-card">
+                        <div class="flex items-center mb-6">
+                            <div class="h-12 w-12 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="font-bold text-gray-900">Carlos Silva</h4>
+                                <p class="text-sm text-gray-500">Empreendedor</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 italic mb-4">"Depois de aplicar esses hábitos, meu negócio cresceu 300% em 6 meses! O mindset realmente muda tudo."</p>
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-xl testimonial-card">
+                        <div class="flex items-center mb-6">
+                            <div class="h-12 w-12 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="font-bold text-gray-900">Ana Paula</h4>
+                                <p class="text-sm text-gray-500">Executiva</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 italic mb-4">"Finalmente entendi o que me impedia de ter sucesso. Esse material mudou completamente minha abordagem profissional."</p>
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-xl testimonial-card">
+                        <div class="flex items-center mb-6">
+                            <div class="h-12 w-12 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="font-bold text-gray-900">Roberto Costa</h4>
+                                <p class="text-sm text-gray-500">Investidor</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 italic mb-4">"O mindset é tudo. Esse material é ouro puro para quem quer crescer. Minha carteira de investimentos nunca foi tão saudável."</p>
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-12 text-center">
+                    <a href="#thank-you-page" onclick="showThankYouPage()" class="inline-flex items-center px-8 py-4 border border-transparent text-lg font-bold rounded-lg shadow-md text-white bg-gradient-to-r from-indigo-600 to-indigo-700 hover:from-indigo-700 hover:to-indigo-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-all duration-300">
+                        <i class="fas fa-rocket mr-3"></i> Transforme Sua Mentalidade Hoje
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Perguntas Frequentes</h2>
+                    <p class="text-xl text-gray-600">Tire suas dúvidas sobre o Manual da Mente Milionária</p>
+                </div>
+                
+                <div class="space-y-4">
+                    <div class="border border-gray-200 rounded-xl overflow-hidden">
+                        <button class="flex items-center justify-between w-full p-6 text-left font-semibold text-gray-900 hover:bg-gray-50 transition-colors duration-200">
+                            <span>O e-book é realmente gratuito?</span>
+                            <i class="fas fa-chevron-down text-indigo-600 transition-transform duration-200"></i>
+                        </button>
+                        <div class="px-6 pb-6 hidden">
+                            <p class="text-gray-600">Sim, o Manual da Mente Milionária é 100% gratuito. Nosso objetivo é compartilhar conhecimento valioso que pode ajudar a transformar sua mentalidade financeira.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="border border-gray-200 rounded-xl overflow-hidden">
+                        <button class="flex items-center justify-between w-full p-6 text-left font-semibold text-gray-900 hover:bg-gray-50 transition-colors duration-200">
+                            <span>Preciso preencher algum formulário?</span>
+                            <i class="fas fa-chevron-down text-indigo-600 transition-transform duration-200"></i>
+                        </button>
+                        <div class="px-6 pb-6 hidden">
+                            <p class="text-gray-600">Não! Basta clicar no botão de download e você terá acesso imediato ao e-book sem necessidade de cadastro ou formulários.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="border border-gray-200 rounded-xl overflow-hidden">
+                        <button class="flex items-center justify-between w-full p-6 text-left font-semibold text-gray-900 hover:bg-gray-50 transition-colors duration-200">
+                            <span>Quanto tempo leva para ver resultados?</span>
+                            <i class="fas fa-chevron-down text-indigo-600 transition-transform duration-200"></i>
+                        </button>
+                        <div class="px-6 pb-6 hidden">
+                            <p class="text-gray-600">Os resultados variam conforme o comprometimento de cada pessoa. Alguns leitores relatam mudanças perceptíveis em semanas, enquanto outros levam alguns meses para consolidar os novos hábitos.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="border border-gray-200 rounded-xl overflow-hidden">
+                        <button class="flex items-center justify-between w-full p-6 text-left font-semibold text-gray-900 hover:bg-gray-50 transition-colors duration-200">
+                            <span>Posso compartilhar o e-book com outras pessoas?</span>
+                            <i class="fas fa-chevron-down text-indigo-600 transition-transform duration-200"></i>
+                        </button>
+                        <div class="px-6 pb-6 hidden">
+                            <p class="text-gray-600">Sim, você pode compartilhar o link desta página com quem desejar. Quanto mais pessoas tiverem acesso a esse conhecimento, melhor!</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-12 text-center">
+                    <a href="#thank-you-page" onclick="showThankYouPage()" class="inline-flex items-center px-8 py-4 border border-transparent text-lg font-bold rounded-lg shadow-md text-white bg-gradient-to-r from-indigo-600 to-indigo-700 hover:from-indigo-700 hover:to-indigo-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-all duration-300">
+                        <i class="fas fa-download mr-3"></i> Baixar E-book Agora
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="py-16 px-4 sm:px-6 lg:px-8 hero-gradient text-white">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Pronto Para Transformar Sua Mentalidade Financeira?</h2>
+                <p class="text-xl text-indigo-100 mb-8">O conhecimento que pode mudar sua vida está a um clique de distância.</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#thank-you-page" onclick="showThankYouPage()" class="pulse inline-flex items-center justify-center px-8 py-4 border border-transparent text-lg font-bold rounded-lg shadow-lg text-indigo-900 bg-white hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white transition-all duration-300">
+                        <i class="fas fa-download mr-3"></i> Baixar E-book Gratuito
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-gray-900 text-white py-12 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid md:grid-cols-4 gap-8">
+                    <div>
+                        <div class="flex items-center mb-4">
+                            <div class="h-10 w-10 rounded-full bg-indigo-600 flex items-center justify-center text-white font-bold text-xl">
+                                M
+                            </div>
+                            <span class="ml-3 text-xl font-bold">Mente Milionária</span>
+                        </div>
+                        <p class="text-gray-400">Transformando mentalidades para criar vidas de abundância e sucesso.</p>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Links Rápidos</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#features" class="text-gray-400 hover:text-white transition-colors duration-200">Benefícios</a></li>
+                            <li><a href="#testimonials" class="text-gray-400 hover:text-white transition-colors duration-200">Depoimentos</a></li>
+                            <li><a href="#faq" class="text-gray-400 hover:text-white transition-colors duration-200">Dúvidas</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Legal</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">Termos de Uso</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">Política de Privacidade</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">Isenção de Responsabilidade</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Contato</h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-center text-gray-400"><i class="fas fa-envelope mr-2"></i> contato@mentemilionaria.com</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                    <p>© 2023 Mente Milionária. Todos os direitos reservados.</p>
+                    <p class="mt-2 text-sm">Este material não substitui acompanhamento profissional.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <!-- Thank You Page with Upsell (hidden by default) -->
+    <div id="thank-you-page" class="hidden">
+        <!-- Navigation -->
+        <nav class="bg-white shadow-sm py-4">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center">
+                        <div class="h-10 w-10 rounded-full bg-indigo-600 flex items-center justify-center text-white font-bold text-xl">
+                            M
+                        </div>
+                        <span class="ml-3 text-xl font-bold text-gray-900">Mente Milionária</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Thank You Content -->
+        <header class="gradient-bg py-16 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white p-8 md:p-12 rounded-xl shadow-lg text-center">
+                    <div class="flex justify-center mb-6">
+                        <div class="h-20 w-20 rounded-full bg-green-100 flex items-center justify-center">
+                            <i class="fas fa-check-circle text-green-600 text-4xl"></i>
+                        </div>
+                    </div>
+                    
+                    <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                        <span class="highlight">Parabéns!</span> Seu E-book Está Pronto
+                    </h1>
+                    
+                    <p class="text-xl text-gray-700 mb-8">
+                        Continue rolando para baixo para fazer o download do seu Manual da Mente Milionária.
+                    </p>
+                    
+                    <div class="animate-bounce mt-8">
+                        <i class="fas fa-arrow-down text-3xl text-indigo-600"></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Upsell Section -->
+        <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                        <span class="text-yellow-600">Oportunidade Exclusiva:</span> Vá Além do Básico
+                    </h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        O e-book gratuito é só o começo. Se você quer realmente transformar sua mente, precisa do treinamento completo.
+                    </p>
+                </div>
+                
+                <div class="flex flex-col lg:flex-row gap-12 items-center">
+                    <div class="lg:w-1/2">
+                        <div class="relative">
+                            <div class="absolute -inset-4 bg-yellow-500 rounded-2xl opacity-20 blur-lg"></div>
+                            <div class="ebook-shadow rounded-2xl overflow-hidden relative">
+                                <img src="colecao.png" alt="Reprogramação Mental" class="w-full h-auto rounded-2xl border-4 border-white">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="lg:w-1/2">
+                        <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+                            <span class="highlight">Reprogramação Mental</span> para Riqueza e Sucesso
+                        </h3>
+                        
+                        <p class="text-lg text-gray-800 mb-8">
+                            O treinamento completo que vai reconfigurar sua mente no nível mais profundo para atrair mais dinheiro, oportunidades e realização pessoal.
+                        </p>
+                        
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <div class="h-6 w-6 rounded-full bg-indigo-600 flex items-center justify-center text-white">
+                                        <i class="fas fa-check text-xs"></i>
+                                    </div>
+                                </div>
+                                <p class="ml-3 text-lg text-gray-800">São 5 ebooks para reprogramar sua vida em todos os aspectos.</p>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <div class="h-6 w-6 rounded-full bg-indigo-600 flex items-center justify-center text-white">
+                                        <i class="fas fa-check text-xs"></i>
+                                    </div>
+                                </div>
+                                <p class="ml-3 text-lg text-gray-800">Elimine crenças sabotadoras de uma vez por todas</p>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <div class="h-6 w-6 rounded-full bg-indigo-600 flex items-center justify-center text-white">
+                                        <i class="fas fa-check text-xs"></i>
+                                    </div>
+                                </div>
+                                <p class="ml-3 text-lg text-gray-800">Ative sua mentalidade de riqueza comprovada</p>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <div class="h-6 w-6 rounded-full bg-indigo-600 flex items-center justify-center text-white">
+                                        <i class="fas fa-check text-xs"></i>
+                                    </div>
+                                </div>
+                                <p class="ml-3 text-lg text-gray-800">Técnicas mentais e exercícios de visualização</p>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <div class="h-6 w-6 rounded-full bg-indigo-600 flex items-center justify-center text-white">
+                                        <i class="fas fa-check text-xs"></i>
+                                    </div>
+                                </div>
+                                <p class="ml-3 text-lg text-gray-800">Pense como os milionários e colha os mesmos resultados</p>
+                            </li>
+                        </ul>
+                        
+                        <div class="bg-yellow-50 p-6 rounded-lg border border-yellow-200 mb-8">
+                            <div class="flex items-center justify-center mb-4">
+                                <div class="flex-shrink-0">
+                                    <div class="h-10 w-10 rounded-full bg-yellow-500 flex items-center justify-center text-white">
+                                        <i class="fas fa-gift"></i>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <p class="text-lg font-semibold text-gray-900">Bônus Exclusivos Incluídos:</p>
+                                    <p class="text-gray-700">Exercício de reprogramação diária + Planner de organização pessoal</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="text-center">
+                            <p class="text-2xl font-bold text-gray-900 mb-2">
+                                <span class="line-through text-gray-500">De R$197</span>
+                                <span class="text-yellow-600 ml-2">por apenas R$89,90</span>
+                            </p>
+                            <p class="text-lg text-gray-700 mb-6">Oferta por tempo limitado – aproveite agora!</p>
+                            
+                            <a href="https://pay.kiwify.com.br/s9l1hrI" class="inline-flex items-center px-8 py-4 border border-transparent text-lg font-bold rounded-lg shadow-lg text-white bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 transition-all duration-300">
+                                <i class="fas fa-bolt mr-3"></i> Sim, Quero Reprogramar Minha Mente!
+                            </a>
+                            
+                            <div class="mt-6">
+                                <img src="https://cdn.kiwify.com.br/5Yw1hBZQ6y5j1QJ1Yh1p.png" alt="Métodos de pagamento" class="h-10 mx-auto">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Download Section (now at the bottom) -->
+        <section class="py-16 px-4 sm:px-6 lg:px-8 gradient-bg">
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white p-8 md:p-12 rounded-xl shadow-lg text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                        <span class="highlight">Pronto para baixar?</span> Seu E-book Está Aqui
+                    </h2>
+                    
+                    <p class="text-xl text-gray-700 mb-8">
+                        Clique no botão abaixo para fazer o download direto do seu Manual da Mente Milionária:
+                    </p>
+                    
+                    <div class="mt-6">
+                        <a href="https://drive.google.com/drive/folders/1XoSxMuzBXndY5k5o_xcv9mRxMpIhdEiR?usp=sharing" id="download-button" class="inline-flex items-center px-8 py-4 border border-transparent text-lg font-bold rounded-lg shadow-md text-white bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition-all duration-300">
+                            <i class="fas fa-download mr-3"></i> Baixar E-book Gratuito
+                        </a>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <p class="text-gray-600">Ou compartilhe com amigos:</p>
+                        <div class="flex justify-center space-x-4 mt-4">
+                            <a href="#" class="h-10 w-10 rounded-full bg-blue-600 flex items-center justify-center text-white">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="h-10 w-10 rounded-full bg-blue-400 flex items-center justify-center text-white">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="h-10 w-10 rounded-full bg-red-600 flex items-center justify-center text-white">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-gray-900 text-white py-12 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-7xl mx-auto text-center">
+                <p>© 2023 Mente Milionária. Todos os direitos reservados.</p>
+                <p class="mt-2 text-gray-400">Este material não substitui acompanhamento profissional.</p>
+            </div>
+        </footer>
+    </div>
+    
+    <script>
+        function showThankYouPage() {
+            // Impede o comportamento padrão do link
+            event.preventDefault();
+            
+            // Mostra a página de agradecimento e esconde a principal
+            document.getElementById('main-page').classList.add('hidden');
+            document.getElementById('thank-you-page').classList.remove('hidden');
+            
+            // Rola para o topo da página
+            window.scrollTo(0, 0);
+        }
+        
+        // Adiciona evento de clique ao botão de download
+        document.getElementById('download-button').addEventListener('click', function() {
+            // Aqui você pode adicionar tracking de download se necessário
+            console.log('Download iniciado');
+        });
+        
+        // Handle FAQ accordion
+        document.querySelectorAll('#faq button').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                if (content.classList.contains('hidden')) {
+                    content.classList.remove('hidden');
+                    icon.classList.remove('fa-chevron-down');
+                    icon.classList.add('fa-chevron-up');
+                } else {
+                    content.classList.add('hidden');
+                    icon.classList.remove('fa-chevron-up');
+                    icon.classList.add('fa-chevron-down');
+                }
+            });
+        });
+        
+        // If you want to handle direct access to thank you page via URL
+        if(window.location.hash === '#thank-you-page') {
+            showThankYouPage();
+        }
+    </script>
+</body>
+</html>
